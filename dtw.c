@@ -36,21 +36,21 @@ double dtw(double* sequence1, int len1, double* sequence2, int len2) {
 
 int main() {
 
-    FILE* file2 = fopen("D:/Internship/vectors/test1.txt", "r");
-    FILE* file7 = fopen("D:/Internship/vectors/test2.txt", "r");
-    FILE* file8 = fopen("D:/Internship/vectors/test3.txt", "r");
-    FILE* file9 = fopen("D:/Internship/vectors/test4.txt", "r");
-    FILE* file10 = fopen("D:/Internship/vectors/test5.txt", "r");
-    FILE* file11 = fopen("D:/Internship/vectors/test6.txt", "r");
-    FILE* file12 = fopen("D:/Internship/vectors/test7.txt", "r");
-    FILE* file13 = fopen("D:/Internship/vectors/test8.txt", "r");
-    FILE* file14 = fopen("D:/Internship/vectors/test9.txt", "r");
-    FILE* file15 = fopen("D:/Internship/vectors/test10.txt", "r");
-    FILE* file1 = fopen("D:/Internship/vectors/reference1.txt", "r");
-    FILE* file3 = fopen("D:/Internship/vectors/reference2.txt", "r");
-    FILE* file4 = fopen("D:/Internship/vectors/reference3.txt", "r");
-    FILE* file5 = fopen("D:/Internship/vectors/reference4.txt", "r");
-    FILE* file6 = fopen("D:/Internship/vectors/reference5.txt", "r");
+    FILE* file2 = fopen("vectors/test1.txt", "r");
+    FILE* file7 = fopen("vectors/test2.txt", "r");
+    FILE* file8 = fopen("vectors/test3.txt", "r");
+    FILE* file9 = fopen("vectors/test4.txt", "r");
+    FILE* file10 = fopen("vectors/test5.txt", "r");
+    FILE* file11 = fopen("vectors/test6.txt", "r");
+    FILE* file12 = fopen("vectors/test7.txt", "r");
+    FILE* file13 = fopen("vectors/test8.txt", "r");
+    FILE* file14 = fopen("vectors/test9.txt", "r");
+    FILE* file15 = fopen("vectors/test10.txt", "r");
+    FILE* file1 = fopen("vectors/reference1.txt", "r");
+    FILE* file3 = fopen("vectors/reference2.txt", "r");
+    FILE* file4 = fopen("vectors/reference3.txt", "r");
+    FILE* file5 = fopen("vectors/reference4.txt", "r");
+    FILE* file6 = fopen("vectors/reference5.txt", "r");
 
     if (file1 == NULL || file2 == NULL || file3 == NULL || file4 == NULL || file5 == NULL || file6 == NULL || file7 == NULL || file8 == NULL || file9 == NULL || file10 == NULL || file11 == NULL || file12 == NULL || file13 == NULL || file14 == NULL || file15 == NULL) {
         printf("Error opening file.\n");

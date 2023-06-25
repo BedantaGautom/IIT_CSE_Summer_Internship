@@ -51,21 +51,21 @@ double frechetDistance(const vector<Point>& path1, const vector<Point>& path2) {
 }
 
 int main() {
-    string filename1 = "D:/Internship/vectors/reference1.txt";
-    string filename2 = "D:/Internship/vectors/reference2.txt";
-    string filename3 = "D:/Internship/vectors/reference3.txt";
-    string filename4 = "D:/Internship/vectors/reference4.txt";
-    string filename5 = "D:/Internship/vectors/reference5.txt";
-    string filename6 = "D:/Internship/vectors/test1.txt";
-    string filename7 = "D:/Internship/vectors/test2.txt";
-    string filename8 = "D:/Internship/vectors/test3.txt";
-    string filename9 = "D:/Internship/vectors/test4.txt";
-    string filename10 = "D:/Internship/vectors/test5.txt";
-    string filename11 = "D:/Internship/vectors/test6.txt";
-    string filename12 = "D:/Internship/vectors/test7.txt";
-    string filename13 = "D:/Internship/vectors/test8.txt";
-    string filename14 = "D:/Internship/vectors/test9.txt";
-    string filename15 = "D:/Internship/vectors/test10.txt";
+    string filename1 = "vectors/reference1.txt";
+    string filename2 = "vectors/reference2.txt";
+    string filename3 = "vectors/reference3.txt";
+    string filename4 = "vectors/reference4.txt";
+    string filename5 = "vectors/reference5.txt";
+    string filename6 = "vectors/test1.txt";
+    string filename7 = "vectors/test2.txt";
+    string filename8 = "vectors/test3.txt";
+    string filename9 = "vectors/test4.txt";
+    string filename10 = "vectors/test5.txt";
+    string filename11 = "vectors/test6.txt";
+    string filename12 = "vectors/test7.txt";
+    string filename13 = "vectors/test8.txt";
+    string filename14 = "vectors/test9.txt";
+    string filename15 = "vectors/test10.txt";
 
     // // Open the files
     ifstream file1(filename1);
