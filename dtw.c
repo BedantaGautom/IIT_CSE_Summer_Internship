@@ -5,6 +5,30 @@
 #define INF 1e20
 #define MAX_SIZE 100
 
+char findminimum(double a,double b,double c,double d,double e) {
+    double min = a;
+    char letter = 'A';
+
+    if(b<min){
+        b = min; 
+        letter = 'E';
+    }
+    if(c<min){
+        c = min;
+        letter = 'I';
+    }
+    if(d<min){
+        d = min;
+        letter = 'O';
+    }
+    if(e<min){
+        e = min;
+        letter = 'U';
+    }
+    
+    return letter;
+}
+
 double distance(double x, double y) {
     // Euclidean distance
     return sqrt(pow(x - y, 2));
@@ -150,7 +174,7 @@ int main() {
     double dtw_distance5 = dtw(sequence6, len1, sequence2, len2);
     printf("DTW distance U & test1: %.2f\n", dtw_distance5);
 
-    printf("The test vector1 is closest to the letter A.\n");
+    printf("The test vector1 is closest to the letter %c\n",findminimum(dtw_distance1,dtw_distance2,dtw_distance3,dtw_distance4,dtw_distance5));
 
     double dtw_distance6 = dtw(sequence1, len1, sequence7, len2);
     printf("DTW distance A & test2: %.2f\n", dtw_distance6);
@@ -163,7 +187,7 @@ int main() {
     double dtw_distance10 = dtw(sequence6, len1, sequence7, len2);
     printf("DTW distance U & test2: %.2f\n", dtw_distance10);
 
-    printf("The test vector2 is closest to the letter A.\n");
+    printf("The test vector2 is closest to the letter %c\n",findminimum(dtw_distance6,dtw_distance7,dtw_distance8,dtw_distance9,dtw_distance10));
 
     double dtw_distance11 = dtw(sequence1, len1, sequence8, len2);
     printf("DTW distance A & test3: %.2f\n", dtw_distance11);
@@ -176,7 +200,7 @@ int main() {
     double dtw_distance15 = dtw(sequence6, len1, sequence8, len2);
     printf("DTW distance U & test3: %.2f\n", dtw_distance15);
 
-    printf("The test vector3 is closest to the letter E.\n");
+    printf("The test vector3 is closest to the letter %c\n",findminimum(dtw_distance11,dtw_distance12,dtw_distance13,dtw_distance14,dtw_distance15));
 
     double dtw_distance16 = dtw(sequence1, len1, sequence9, len2);
     printf("DTW distance A & test4: %.2f\n", dtw_distance16);
@@ -189,7 +213,7 @@ int main() {
     double dtw_distance20 = dtw(sequence6, len1, sequence9, len2);
     printf("DTW distance U & test4: %.2f\n", dtw_distance20);
 
-    printf("The test vector4 is closest to the letter E.\n");
+    printf("The test vector4 is closest to the letter %c\n",findminimum(dtw_distance16,dtw_distance17,dtw_distance18,dtw_distance19,dtw_distance20));
 
     double dtw_distance21 = dtw(sequence1, len1, sequence10, len2);
     printf("DTW distance A & test5: %.2f\n", dtw_distance21);
@@ -202,7 +226,7 @@ int main() {
     double dtw_distance25 = dtw(sequence6, len1, sequence10, len2);
     printf("DTW distance U & test5: %.2f\n", dtw_distance25);
 
-    printf("The test vector5 is closest to the letter I.\n");
+    printf("The test vector5 is closest to the letter %c\n",findminimum(dtw_distance21,dtw_distance22,dtw_distance23,dtw_distance24,dtw_distance25));
 
     double dtw_distance26 = dtw(sequence1, len1, sequence11, len2);
     printf("DTW distance A & test6: %.2f\n", dtw_distance26);
@@ -215,7 +239,7 @@ int main() {
     double dtw_distance30 = dtw(sequence6, len1, sequence11, len2);
     printf("DTW distance U & test6: %.2f\n", dtw_distance30);
 
-    printf("The test vector6 is closest to the letter I.\n");
+    printf("The test vector6 is closest to the letter %c\n",findminimum(dtw_distance26,dtw_distance27,dtw_distance28,dtw_distance29,dtw_distance30));
 
     double dtw_distance31 = dtw(sequence1, len1, sequence12, len2);
     printf("DTW distance A & test7: %.2f\n", dtw_distance31);
@@ -228,7 +252,7 @@ int main() {
     double dtw_distance35 = dtw(sequence6, len1, sequence12, len2);
     printf("DTW distance U & test7: %.2f\n", dtw_distance35);
 
-    printf("The test vector7 is closest to the letter A.\n");
+    printf("The test vector7 is closest to the letter %c\n",findminimum(dtw_distance31,dtw_distance32,dtw_distance33,dtw_distance34,dtw_distance35));
 
     double dtw_distance36 = dtw(sequence1, len1, sequence13, len2);
     printf("DTW distance A & test8: %.2f\n", dtw_distance36);
@@ -241,7 +265,7 @@ int main() {
     double dtw_distance40 = dtw(sequence6, len1, sequence13, len2);
     printf("DTW distance U & test8: %.2f\n", dtw_distance40);
 
-    printf("The test vector8 is closest to the letter U.\n");
+    printf("The test vector8 is closest to the letter %c\n",findminimum(dtw_distance36,dtw_distance37,dtw_distance38,dtw_distance39,dtw_distance40));
 
     double dtw_distance41 = dtw(sequence1, len1, sequence14, len2);
     printf("DTW distance A & test9: %.2f\n", dtw_distance41);
@@ -254,7 +278,7 @@ int main() {
     double dtw_distance45 = dtw(sequence6, len1, sequence14, len2);
     printf("DTW distance U & test9: %.2f\n", dtw_distance45);
 
-    printf("The test vector9 is closest to the letter U.\n");
+    printf("The test vector9 is closest to the letter %c\n",findminimum(dtw_distance41,dtw_distance42,dtw_distance43,dtw_distance44,dtw_distance45));
 
     double dtw_distance46 = dtw(sequence1, len1, sequence15, len2);
     printf("DTW distance A & test10: %.2f\n", dtw_distance46);
@@ -267,7 +291,7 @@ int main() {
     double dtw_distance50 = dtw(sequence6, len1, sequence15, len2);
     printf("DTW distance U & test10: %.2f\n", dtw_distance50);
 
-    printf("The test vector10 is closest to the letter A.\n");
+    printf("The test vector10 is closest to the letter %c\n",findminimum(dtw_distance46,dtw_distance47,dtw_distance48,dtw_distance49,dtw_distance50));
 
     return 0;
 }

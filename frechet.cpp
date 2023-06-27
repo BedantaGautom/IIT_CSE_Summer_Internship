@@ -6,6 +6,30 @@
 
 using namespace std;
 
+char findminimum(double a,double b,double c,double d,double e) {
+    double min3 = a;
+    char letter = 'A';
+
+    if(b<min3){
+        b = min3; 
+        letter = 'E';
+    }
+    if(c<min3){
+        c = min3;
+        letter = 'I';
+    }
+    if(d<min3){
+        d = min3;
+        letter = 'O';
+    }
+    if(e<min3){
+        e = min3;
+        letter = 'U';
+    }
+    
+    return letter;
+}
+
 struct Point {
     double x;
     double y;
@@ -193,7 +217,7 @@ int main() {
     double frechet_distance5 = frechetDistance(path5, path6);
     printf("Frechet distance U & test1: %.2f\n", frechet_distance5);
 
-    printf("The test vector1 is closest to the letter I.\n");
+    printf("The test vector1 is closest to the letter %c\n",findminimum(frechet_distance1,frechet_distance2,frechet_distance3,frechet_distance4,frechet_distance5));
 
     double frechet_distance6 = frechetDistance(path1, path7);
     printf("Frechet distance A & test2: %.2f\n", frechet_distance6);
@@ -206,7 +230,7 @@ int main() {
     double frechet_distance10 = frechetDistance(path5, path7);
     printf("Frechet distance U & test2: %.2f\n", frechet_distance10);
 
-    printf("The test vector2 is closest to the letter A.\n");
+   printf("The test vector2 is closest to the letter %c\n",findminimum(frechet_distance6,frechet_distance7,frechet_distance8,frechet_distance9,frechet_distance10));
 
     double frechet_distance11 = frechetDistance(path1, path8);
     printf("Frechet distance A & test3: %.2f\n", frechet_distance11);
@@ -219,7 +243,7 @@ int main() {
     double frechet_distance15 = frechetDistance(path5, path8);
     printf("Frechet distance U & test3: %.2f\n", frechet_distance15);
 
-    printf("The test vector3 is closest to the letter I.\n");
+    printf("The test vector3 is closest to the letter %c\n",findminimum(frechet_distance11,frechet_distance12,frechet_distance13,frechet_distance14,frechet_distance15));
 
     double frechet_distance16 = frechetDistance(path1, path9);
     printf("Frechet distance A & test4: %.2f\n", frechet_distance16);
@@ -232,7 +256,7 @@ int main() {
     double frechet_distance20 = frechetDistance(path5, path9);
     printf("Frechet distance U & test4: %.2f\n", frechet_distance20);
 
-    printf("The test vector4 is closest to the letter E.\n");
+    printf("The test vector4 is closest to the letter %c\n",findminimum(frechet_distance16,frechet_distance17,frechet_distance18,frechet_distance19,frechet_distance20));
 
     double frechet_distance21 = frechetDistance(path1, path10);
     printf("Frechet distance A & test1: %.2f\n", frechet_distance21);
@@ -245,7 +269,7 @@ int main() {
     double frechet_distance25 = frechetDistance(path5, path10);
     printf("Frechet distance U & test1: %.2f\n", frechet_distance25);
 
-    printf("The test vector5 is closest to the letter I.\n");
+    printf("The test vector5 is closest to the letter %c\n",findminimum(frechet_distance21,frechet_distance22,frechet_distance23,frechet_distance24,frechet_distance25));
 
     double frechet_distance26 = frechetDistance(path1, path11);
     printf("Frechet distance A & test6: %.2f\n", frechet_distance26);
@@ -258,7 +282,7 @@ int main() {
     double frechet_distance30 = frechetDistance(path5, path11);
     printf("Frechet distance U & test6: %.2f\n", frechet_distance30);
 
-    printf("The test vector6 is closest to the letter I.\n");
+    printf("The test vector6 is closest to the letter %c\n",findminimum(frechet_distance26,frechet_distance27,frechet_distance28,frechet_distance29,frechet_distance30));
 
     double frechet_distance31 = frechetDistance(path1, path12);
     printf("Frechet distance A & test7: %.2f\n", frechet_distance31);
@@ -271,7 +295,7 @@ int main() {
     double frechet_distance35 = frechetDistance(path5, path12);
     printf("Frechet distance U & test7: %.2f\n", frechet_distance35);
 
-    printf("The test vector7 is closest to the letter O.\n");
+    printf("The test vector7 is closest to the letter %c\n",findminimum(frechet_distance31,frechet_distance32,frechet_distance33,frechet_distance34,frechet_distance35));
 
     double frechet_distance36 = frechetDistance(path1, path13);
     printf("Frechet distance A & test8: %.2f\n", frechet_distance36);
@@ -284,7 +308,7 @@ int main() {
     double frechet_distance40 = frechetDistance(path5, path13);
     printf("Frechet distance U & test8: %.2f\n", frechet_distance40);
 
-    printf("The test vector8 is closest to the letter A.\n");
+    printf("The test vector8 is closest to the letter %c\n",findminimum(frechet_distance36,frechet_distance37,frechet_distance38,frechet_distance39,frechet_distance40));
 
     double frechet_distance41 = frechetDistance(path1, path14);
     printf("Frechet distance A & test9: %.2f\n", frechet_distance41);
@@ -297,7 +321,7 @@ int main() {
     double frechet_distance45 = frechetDistance(path5, path14);
     printf("Frechet distance U & test9: %.2f\n", frechet_distance45);
 
-    printf("The test vector9 is closest to the letter U.\n");
+    printf("The test vector9 is closest to the letter %c\n",findminimum(frechet_distance41,frechet_distance42,frechet_distance43,frechet_distance44,frechet_distance45));
 
     double frechet_distance46 = frechetDistance(path1, path15);
     printf("Frechet distance A & test10: %.2f\n", frechet_distance46);
@@ -310,7 +334,7 @@ int main() {
     double frechet_distance50 = frechetDistance(path5, path15);
     printf("Frechet distance U & test10: %.2f\n", frechet_distance50);
 
-    printf("The test vector10 is closest to the letter U.\n");
+    printf("The test vector10 is closest to the letter %c\n",findminimum(frechet_distance46,frechet_distance47,frechet_distance48,frechet_distance49,frechet_distance50));
 
     return 0;
 }
