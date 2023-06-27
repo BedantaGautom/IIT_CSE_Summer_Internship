@@ -4,18 +4,18 @@
 - Type the following command :<br><br>
   For the Frechet Distance algorithm -
   ```
-  g++ frechet.cpp
+  g++ frechet.cpp -o frechet
   ```
   ```
-   ./frechet
+  .\frechet
   ```
   <br><br>
   For the Distance Time Warping algorithm -
   ``` 
-  g++ dtw.cpp
+  gcc dtw.c -o dtw
   ```
   ```
-  ./dtw
+  .\dtw
   ```
 - The output will be displayed.
   
