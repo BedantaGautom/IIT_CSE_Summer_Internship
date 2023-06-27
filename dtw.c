@@ -10,19 +10,19 @@ char findminimum(double a,double b,double c,double d,double e) {
     char letter = 'A';
 
     if(b<min){
-        b = min; 
+        min = b; 
         letter = 'E';
     }
     if(c<min){
-        c = min;
+        min = c;
         letter = 'I';
     }
     if(d<min){
-        d = min;
+        min = d;
         letter = 'O';
     }
     if(e<min){
-        e = min;
+        min = e;
         letter = 'U';
     }
     
